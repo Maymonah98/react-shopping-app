@@ -25,8 +25,7 @@ function Header() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div className={classes.root}> 
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} aria-label="menu">
             <MenuIcon />
@@ -40,7 +39,6 @@ function Header() {
           </Typography>
           <Button >Login</Button>
         </Toolbar>
-      </AppBar>
     </div>
   );
   }
