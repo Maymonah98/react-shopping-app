@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Favorite from '@material-ui/icons/Favorite';
+import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,17 +28,24 @@ function Header() {
   return (
     <div className={classes.root}> 
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+        <Button >Login</Button>
+        <Button >sign up</Button>
           <Typography  
           component="h2"
           variant="h5"
           align="center"
-          noWrap className={classes.title}>
+           className={classes.title}>
             HandMade 
           </Typography>
-          <Button >Login</Button>
+          {/* <IconButton edge="start" className={classes.menuButton} aria-label="menu">
+            <MenuIcon />
+          </IconButton> */}
+          <IconButton edge="start"  className={classes.menuButton} color="inherit"  aria-label="fovorite">
+            <Favorite/>
+          </IconButton>
+          <IconButton edge="start"  className={classes.menuButton} color="inherit"  aria-label="shoppingBasket">
+            <ShoppingBasket/>
+          </IconButton>
         </Toolbar>
     </div>
   );
