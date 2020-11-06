@@ -16,11 +16,11 @@ function Shelf() {
 
     return (
         <div className={classes.root}>
-          <Grid container spacing={3}>
-            <Grid item xs={3} sm = {3}>
+          <Grid container spacing={3} >
+            <Grid item xs={3} sm = {3} >
               <Filters/>
             </Grid>
-            <Grid item xs={9}>
+            <Grid container item xs = {9} direction='row'  >
               <ProductList/>
             </Grid>
           </Grid>
