@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      flexGrow: 1,
+      width: "25%"
     },  
   }));
 
@@ -14,15 +14,15 @@ function ProductList() {
   const classes = useStyles();
   const items= false;
 
-  if (!items) return Array.from(new Array(6)).map(index=>(
+  if (!items) return Array.from(new Array(10)).map(index=>(
     <div className={classes.root}>
     
     <Box key={index} width="100%" p={0.5} >
-    <Skeleton animation="wave" variant="rect" width="100%" height={300} />
+    <Skeleton animation="wave" variant="rect" width="97%" height={300} />
     <Skeleton animation="wave" width="80%" />
     <Skeleton animation="wave" width="60%"/>
     <Skeleton animation="wave" width="80%"/>
-    <Skeleton animation="wave" />
+    <Skeleton animation="wave" width = "97%"/>
     </Box>
     
     </div>
