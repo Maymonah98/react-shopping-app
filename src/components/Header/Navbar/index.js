@@ -35,7 +35,7 @@ function Navbar() {
           variant="h5"
           align="center"
            className={classes.title}>
-            HandMade 
+            Name of website 
           </Typography>
           {/* <IconButton edge="start" className={classes.menuButton} aria-label="menu">
             <MenuIcon />

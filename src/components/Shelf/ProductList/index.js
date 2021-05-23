@@ -23,6 +23,7 @@ function ProductList() {
     <Skeleton animation="wave" width="60%"/>
     <Skeleton animation="wave" width="80%"/>
     <Skeleton animation="wave" width = "97%"/>
+  
     </Box>
     
     </div>
