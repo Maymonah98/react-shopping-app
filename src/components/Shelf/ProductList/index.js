@@ -9,7 +9,16 @@ const useStyles = makeStyles((theme) => ({
     root: {
       width: "24%",
       margin: 2
-    },  
+    },
+    itemname:{
+      color: "#000000",
+    },
+    itemdesc:{
+      color: "#757575",
+    },
+    itemprice:{
+      color: "#000000",
+    },
   }));
 
 function ProductList() {
@@ -33,11 +42,12 @@ function ProductList() {
       <div className={classes.root} key={item.id} >      
          <Box 
          width="100%"
-         p={0.5} >
+         p={0.5}
+         textAlign={"left"} >
            <img src={item.image} alt="item" height= '300' width= '100%' object-fit= 'contain'/>
-           <Typography>{item.name}</Typography>
-           <Typography>{item.desc}</Typography>
-           <Typography>{item.price} SAR</Typography>
+           <Typography className={classes.itemname} variant={'h6'} gutterBottom >{item.name}</Typography>
+           <Typography className={classes.itemdesc} gutterBottom>{item.desc}</Typography>
+           <Typography className={classes.itemprice} gutterBottom>{item.price} SAR</Typography>
          </Box>
       </div>
       
