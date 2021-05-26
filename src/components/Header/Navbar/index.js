@@ -3,18 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import Favorite from '@material-ui/icons/Favorite';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
+
+import FavDrawer from './FavDrawer';
+import CartDrawer from './CartDrawer';
+
 
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
@@ -37,15 +35,8 @@ function Navbar() {
            className={classes.title}>
             Name of website 
           </Typography>
-          {/* <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
-          <IconButton edge="start"  className={classes.menuButton} color="inherit"  aria-label="fovorite">
-            <Favorite/>
-          </IconButton>
-          <IconButton edge="start"  className={classes.menuButton} color="inherit"  aria-label="shoppingBasket">
-            <ShoppingBasket/>
-          </IconButton>
+          <FavDrawer/>
+          <CartDrawer/>
         </Toolbar>
     </div>
   );
