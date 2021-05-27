@@ -43,7 +43,6 @@ function CartDrawer() {
     
     const handleDrawerOpen = () => {
       setOpen(true)
-      console.log("button is handling")
     }
     const handleDrawerClose = () =>{
       setOpen(false)

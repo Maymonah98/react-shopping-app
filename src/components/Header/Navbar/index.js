@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
+import history from '../../history';
 import FavDrawer from './FavDrawer';
 import CartDrawer from './CartDrawer';
 
@@ -26,8 +26,8 @@ function Navbar() {
   return (
     <div className={classes.root}> 
         <Toolbar>
-        <Button >Login</Button>
-        <Button >sign up</Button>
+        <Button onClick ={()=> history.push('/login')}>Login</Button>
+        <Button onClick={() => history.push('/signup')}>sign up</Button>
           <Typography  
           component="h2"
           variant="h5"
